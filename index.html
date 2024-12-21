@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utopia</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <script src="spaghetti.js"></script>
+  </head>
+  <body
+    class="bg-white dark:bg-gray-900 transition-colors duration-300 overflow-x-hidden"
+  >
+    <!-- Button for dark/light mode -->
+    <button
+      onclick="toggleTheme()"
+      class="fixed top-4 right-4 z-20 p-2 rounded-full bg-gray-200 dark:bg-black dark:text-white"
+    >
+      <svg
+        class="w-6 h-6 block dark:hidden"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+        />
+      </svg>
+      <svg
+        class="w-6 h-6 hidden dark:block"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+        />
+      </svg>
+    </button>
+    <!-- First section with album cover, name and artist -->
+    <section
+      class="w-screen h-screen relative flex flex-col justify-end items-center hover:scale-105 transition-transform duration-300 box-border"
+    >
+      <img
+        class="w-full h-auto absolute z-0 bg-cover bg-center"
+        src="assets//img/utopia.jpg"
+      />
+      <div
+        class="w-full z-10 pb-8 text-center bg-gradient-to-b from-transparent font-bold to-black dark:to-white"
+      >
+        <h1 class="text-white text-6xl font-sans mb-4">UTOPIA</h1>
+        <h2 class="text-white text-2xl font-sans">Travis Scott</h2>
+      </div>
+    </section>
+    <!-- Second section with the tracklist of the album -->
+    <section
+      class="w-full bg-black dark:bg-white p-10 flex flex-col justify-end items-center"
+    >
+      <h2 class="text-white text-4xl underline font-sans mb-8">Tracklist</h2>
+      <div
+        class="w-9/12 rounded-md text-white bg-white dark:bg-gray-200 dark:text-black bg-opacity-20 p-10"
+      >
+        <ul>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            1. HYAENA
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            2. THANK GOD (feat. KayCyy)
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            3. MODERN JAM (feat. Teezo Touchdown)
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            4. MY EYES (feat. Bon Iver & Sampha)
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            5. GOD’S COUNTRY
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            6. SIRENS
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            7. MELTDOWN (feat. Drake)
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            8. FE!N (feat. Playboi Carti & Sheck Wes)
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            9. DELRESTO (ECHOES)(feat. Beyoncé & Bon Iver)
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            10. I KNOW ?
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            11. TOPIA TWINS (feat. 21 Savage & Rob49)
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            12. CIRCUS MAXIMUM (feat. The Weeknd & Swae Lee)
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            13. PARASAIL (feat. Yung Lean & Dave Chapelle)
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            14. SKITZO (feat. Young Thug)
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            15. LOST FOREVER (feat. James Blake & Westside Gunn)
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            16. LOOOVE (feat. Kid Cudi)
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            17. K-POP (feat. The Weeknd & Bad Bunny)
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            18. TELEKINESIS (feat. SZA & Future).
+          </li>
+          <li
+            class="border-b p-2 hover:bg-gray-500 dark:hover:bg-white dark:border-black transition duration-300 rounded-t-md"
+          >
+            19. TIL FURTHER NOTICE (feat. 21 Savage & James Blake)
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Last section with lyrics of three songs -->
+    <section
+      class="w-full text-white bg-black dark:bg-white p-10 flex flex-col justify-end items-center"
+    >
+      <div class="w-9/12 flex flex-row justify-end items-center">
+        <div
+          class="song-button border border-white w-1/3 p-4 cursor-pointer text-black bg-white dark:text-white dark:bg-black dark:border-black transition duration-500"
+        >
+          HYAENA
+        </div>
+        <div
+          class="song-button border border-white w-1/3 p-4 cursor-pointer dark:border-black transition duration-500"
+        >
+          FE!N
+        </div>
+        <div
+          class="song-button border border-white w-1/3 p-4 cursor-pointer dark:border-black transition duration-500"
+        >
+          LOOOVE
+        </div>
+      </div>
+      <div class="w-9/12 flex flex-row justify-center items-center">
+        <!-- Container that contains Embed section from genius website -->
+        <div class="lyrics-container">
+          <div
+            id="rg_embed_link_9368445"
+            class="rg_embed_link"
+            data-song-id="9368445"
+          >
+            Read
+            <a href="https://genius.com/Travis-scott-hyaena-lyrics"
+              >“HYAENA” by Travis Scott</a
+            >
+            on Genius
+          </div>
+          <script
+            crossorigin
+            src="//genius.com/songs/9368445/embed.js"
+          ></script>
+        </div>
+        <div class="lyrics-container">
+          <div
+            id="rg_embed_link_9368459"
+            class="rg_embed_link"
+            data-song-id="9368459"
+          >
+            Read
+            <a href="https://genius.com/Travis-scott-fe-n-lyrics"
+              >“FE!N” by Travis Scott</a
+            >
+            on Genius
+          </div>
+          <script
+            crossorigin
+            src="//genius.com/songs/9368459/embed.js"
+          ></script>
+        </div>
+        <div class="lyrics-container">
+          <div
+            id="rg_embed_link_9368451"
+            class="rg_embed_link"
+            data-song-id="9368451"
+          >
+            Read
+            <a href="https://genius.com/Travis-scott-looove-lyrics"
+              >“LOOOVE” by Travis Scott</a
+            >
+            on Genius
+          </div>
+          <script
+            crossorigin
+            src="//genius.com/songs/9368451/embed.js"
+          ></script>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
